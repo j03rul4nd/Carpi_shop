@@ -1,0 +1,30 @@
+---
+const {title_popular, sub_popular, img_popular} = Astro.props;
+---
+<div class="item_popular">
+    <img class="img_popular" src={img_popular} alt="">
+    <h2 class="title_popular">{title_popular}</h2>
+    <div class="sub_popular">{sub_popular}</div>
+</div>
+<style>
+    .img_popular{
+        width: 100%;
+    }
+    .title_popular{
+        font-size: 14px;
+        text-align: center;
+    }
+    .sub_popular{
+        font-size: 12px;
+        text-align: center;
+    }
+    .item_popular{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #ffffff;
+        min-width: 115px;
+        min-height: 200px;
+        align-items: center;
+    }
+</style>

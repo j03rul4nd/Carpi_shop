@@ -1,0 +1,30 @@
+---
+import bgimage from '../portada.png'
+---
+<div class="portada">
+    <h1 class="portada_h1">Carpi</h1>
+    <img class="portada_img" src={bgimage} alt="" srcset="">
+</div>
+<style>
+    .portada{
+        /* background: rgba(255, 0, 0, 0.279); */
+        position: relative;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .portada_h1{
+        font-family: "Alata";
+        font-style: normal;
+        margin: 0px;
+        margin-bottom: -16px;
+        z-index: 100;
+        font-size: 100px;
+
+    }
+    .portada_img{
+        width: 100%;
+    }
+</style>
