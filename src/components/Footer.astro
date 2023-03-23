@@ -1,0 +1,101 @@
+---
+import instagram from '../icons/instagram.png'
+import facebook from '../icons/facebook.png'
+import pinterest from '../icons/pinterest.png'
+import arrow from '../icons/Arrow.png'
+---
+<footer>
+    <div class="colums_footer">
+        <div class="colum_footer">
+            <ul>
+                <li class="title_footer_li">Collection</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Unisex</li>
+                <li>Kids</li>
+                <li>Sport</li>
+                <li>Coming soon</li>
+            </ul>
+        </div>
+        <div class="colum_footer">
+            <ul>
+                <li class="title_footer_li">Help</li>
+                <li>Privacidad y terminos legales</li>
+                <li>Aviso de cookies</li>
+                <li>Configuración de cookies</li>
+                <li>Nuestra tienda</li>
+                <li>Atención al cliente</li>
+                <li>Contáctanos</li>
+            </ul>
+        </div>
+        <div class="colum_footer more_info_footer">
+            <p class="title_footer_li">More information</p>
+            <img class="arrow" src={arrow} alt="arrow for more information carpi">
+        </div>
+    </div>
+    <div class="final_footer"  >
+        <p class="parraf_footer">El contenido de esta pagina web esta protegida por copyright y es propiedad de Carpi. La idea de negocio de Carpi consiste en ofrecer moda y calidad al mejor precio... </p>
+        <div class="rs">
+            <h4 class="sub_title_footer">Carpi</h4>
+            <div class="group_items_rs">
+                <img src={instagram} class="item_rs" alt="instagram for carpi">
+                <img src={facebook} class="item_rs" alt="facebook for carpi">
+                <img src={pinterest} class="item_rs" alt="pinterest for carpi">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .colums_footer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    .rs{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .parraf_footer{
+        text-align: center;
+    }
+    .group_items_rs{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .item_rs {
+        width: 13%;
+        /* background: red; */
+    }
+    .colums_footer ul li {
+        list-style: none;
+    }
+    .final_footer {
+        padding: 5px;
+    }
+    .arrow{
+        width: 18px;
+        height: 18px;
+    }
+    .more_info_footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* gap: 5px; */
+        padding: 8px;
+    }
+    footer{
+        background: #E4E4E4;
+    }
+    .title_footer_li{
+        font-weight: 600;
+        /* font-size: 21.9408px;
+        line-height: 30px; */
+    }
+</style>
