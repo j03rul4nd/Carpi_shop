@@ -1,0 +1,78 @@
+---
+const {title_item, price, before_price, discount, img_shop_item} = Astro.props;
+
+---
+<div class="item_shop">
+    <div class="portada_item_shop">
+        <img class="img_item_shop" src={img_shop_item} alt="">
+        <div class="descount_item_shop">{discount}</div>
+    </div>
+    <div class="description_item_shop">
+        <h4 class="title_item_shop">{title_item}</h4>
+        <div class="price_content">
+            <p class="price_item_shop">{price}</p>
+            <p class="discount_price_item_shop">{before_price}</p>
+        </div>
+    </div>
+</div>
+<style>
+    .portada_item_shop{
+        height: 150px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        min-width: 186px;
+        min-height: 222px;
+    }    
+    .descount_item_shop{
+        background: #0000009e;
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 85%;
+    }
+    .img_item_shop{
+        width: 100%;
+    }
+    .item_shop{
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border-top-left-radius: 13.93px;
+        border-top-right-radius: 13.93px;
+        scroll-snap-align: start;
+    }
+    .price_item_shop{
+        color: blue;
+        font-size: 18px;
+        margin: 0px;
+        margin-top: 2px;
+    }
+    .discount_price_item_shop{
+        color: rgb(130, 130, 130);
+        text-decoration: line-through;
+        font-size: 12px;
+        margin: 0px;
+    }
+    .title_item_shop{
+        margin: 0px;
+        margin-top: 5px;
+    }
+    .price_content{
+        width: 100%;
+        display: flex;
+        gap: 9px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .description_item_shop{
+        margin-left: 7px;
+    }
+
+</style>

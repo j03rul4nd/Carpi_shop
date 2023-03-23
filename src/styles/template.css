@@ -3,7 +3,7 @@ body{
     display: flex;
     align-items: center;
     height: 100vh;
-    padding: 15px;
+    /* padding: 15px; */
     margin: 0;
     background-color: rgb(242,242,242);
     flex-direction: column;
@@ -27,4 +27,7 @@ div#circle {
 .cp{
     display: flex;
     gap: 5px;
+}
+main{
+    width: 100%;
 }
