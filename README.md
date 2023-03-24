@@ -1,35 +1,34 @@
-# Tienda de Pulseras Artesanales: Carpi
+# Handmade Bracelets Store
 ![](./docs/portada_readme.png)
 
-Este repositorio contiene el código fuente de una página web para una tienda de pulseras artesanales, utilizando la herramienta Astro para su desarrollo. La página está diseñada para mostrar los productos de manera atractiva y permitir a los clientes realizar compras en línea de manera sencilla y segura.
+This repository contains the source code for a web page of a handmade bracelets store, developed using the Astro tool. The page is designed to display products in an attractive way and allow customers to make online purchases easily and securely.
 
-## Instrucciones para Ejecutar el Proyecto
-Clonar este repositorio en tu máquina local:
+## Instructions to Run the Project
+1. Clone this repository on your local machine:
 ```
 git clone https://github.com/j03rul4nd/Carpi_shop.git
 ```
-En la terminal, navega hasta el directorio del proyecto:
+2. In the terminal, navigate to the project directory:
 ```
-cd tienda-pulseras
+cd Carpi_shop
 ```
-Instala las dependencias del proyecto:
+3. Install the project dependencies:
 ```
 npm install
 ```
-Para ejecutar el servidor de desarrollo, usa el comando:
+4. To run the development server, use the following command:
 ```
 npm run dev
 ```
-Abre tu navegador web e ingresa la siguiente dirección **URL**:
+5. Open your web browser and enter the following **URL**:
 ```
 http://localhost:3000
 ```
-Ahora podrás ver la página web de la tienda de pulseras artesanales en acción en tu navegador.
-
-## Tecnologías Utilizadas
+>You should now see the handmade bracelets store web page in action in your browser.
+## Technologies Used
 - Astro
 - HTML
 - CSS
 - JavaScript
-## Contribución
-Si deseas contribuir a este proyecto, por favor abre un **pull request**. Agradecemos todas las contribuciones.
+## Contribution
+If you wish to contribute to this project, please open a **pull request**. We welcome all contributions.
