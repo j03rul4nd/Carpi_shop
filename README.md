@@ -1,48 +1,35 @@
-# Astro Starter Kit: Minimal
+# Tienda de Pulseras Artesanales
+![](./docs/portada_readme.png)
 
-![](./docs/mobile.png)
+Este repositorio contiene el código fuente de una página web para una tienda de pulseras artesanales, utilizando la herramienta Astro para su desarrollo. La página está diseñada para mostrar los productos de manera atractiva y permitir a los clientes realizar compras en línea de manera sencilla y segura.
+
+## Instrucciones para Ejecutar el Proyecto
+Clonar este repositorio en tu máquina local:
 ```
-npm create astro@latest -- --template minimal
+git clone https://github.com/j03rul4nd/Carpi_shop.git
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
+En la terminal, navega hasta el directorio del proyecto:
 ```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+cd tienda-pulseras
 ```
+Instala las dependencias del proyecto:
+```
+npm install
+```
+Para ejecutar el servidor de desarrollo, usa el comando:
+```
+npm run dev
+```
+Abre tu navegador web e ingresa la siguiente dirección **URL**:
+```
+http://localhost:3000
+```
+Ahora podrás ver la página web de la tienda de pulseras artesanales en acción en tu navegador.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Tecnologías Utilizadas
+- Astro
+- HTML
+- CSS
+- JavaScript
+## Contribución
+Si deseas contribuir a este proyecto, por favor abre un **pull request**. Agradecemos todas las contribuciones.
