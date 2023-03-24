@@ -1,6 +1,5 @@
 ---
-import Item_shop from "../components/item_shop.astro";
-const {background_1, Color, title_section, sub_section, img_shop_section, bgimage_1, bgimage_2, bgimage_3, bgimage_4, title_item_1, title_item_2, title_item_3, title_item_4, price_item_1, price_item_2, price_item_3, price_item_4, discount_price_1, discount_price_2, discount_price_3, discount_price_4, before_price_1, before_price_2, before_price_3, before_price_4} = Astro.props;
+const {txt_sub_portada, background_1, Color, title_section, sub_section, img_shop_section} = Astro.props;
 
 ---
 
@@ -102,10 +101,8 @@ const {background_1, Color, title_section, sub_section, img_shop_section, bgimag
                 <h3 style={Color} class="h3_section_store">{title_section}</h3>
                 <p class="sub_section_shop_header" style={Color}>{sub_section}</p>
                 <div class="part_link_ref">
-                    <span class="link_ref_span">
-                        <span style={Color}  class="txt_ref_link">Descubre más</span>
-                        <svg style={Color}  viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="NP" focusable="false" aria-hidden="true"><path d="M.443 12c0 .414.336.75.75.75h20.869l-7.72 7.72a.75.75 0 0 0 1.06 1.06l7.94-7.94a2.252 2.252 0 0 0 0-3.18l-7.94-7.94a.75.75 0 0 0-1.06 1.06l7.72 7.72H1.192a.75.75 0 0 0-.75.75z"></path></svg>
-                    </span>
+                    <span style={Color}  class="txt_ref_link">{txt_sub_portada}</span>
+
                 </div>
             </div>
             <img class="portada_img_section_shop"  src={img_shop_section} alt="" srcset="">
