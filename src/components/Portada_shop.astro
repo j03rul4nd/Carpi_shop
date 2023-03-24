@@ -1,6 +1,6 @@
 ---
 import Item_shop from "../components/item_shop.astro";
-const {background_1, background_2, Color, title_section, sub_section, img_shop_section, bgimage_1, bgimage_2, bgimage_3, bgimage_4, title_item_1, title_item_2, title_item_3, title_item_4, price_item_1, price_item_2, price_item_3, price_item_4, discount_price_1, discount_price_2, discount_price_3, discount_price_4, before_price_1, before_price_2, before_price_3, before_price_4} = Astro.props;
+const {background_1, Color, title_section, sub_section, img_shop_section, bgimage_1, bgimage_2, bgimage_3, bgimage_4, title_item_1, title_item_2, title_item_3, title_item_4, price_item_1, price_item_2, price_item_3, price_item_4, discount_price_1, discount_price_2, discount_price_3, discount_price_4, before_price_1, before_price_2, before_price_3, before_price_4} = Astro.props;
 
 ---
 
@@ -109,14 +109,6 @@ const {background_1, background_2, Color, title_section, sub_section, img_shop_s
                 </div>
             </div>
             <img class="portada_img_section_shop"  src={img_shop_section} alt="" srcset="">
-        </div>
-        <div class="contain_the_section_color_store" style={background_2}>
-            <div style={Color} class="contain_section_store">
-                <Item_shop img_shop_item={bgimage_1} title_item={title_item_1} price={price_item_1} discount={discount_price_1} before_price={before_price_1}></Item_shop>
-                <Item_shop img_shop_item={bgimage_2} title_item={title_item_2} price={price_item_2} discount={discount_price_2} before_price={before_price_2}></Item_shop>
-                <Item_shop img_shop_item={bgimage_3} title_item={title_item_3} price={price_item_3} discount={discount_price_3} before_price={before_price_3}></Item_shop>
-                <Item_shop img_shop_item={bgimage_4} title_item={title_item_4} price={price_item_4} discount={discount_price_4} before_price={before_price_4}></Item_shop>
-            </div>
         </div>
     </div>
 </div>

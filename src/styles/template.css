@@ -34,6 +34,24 @@ main{
     width: 100%;
 }
 
+::-webkit-scrollbar {
+    background: #ffffff00;
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    /* box_shadow: 0 0 10px; */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    /* background: linear-gradient(125deg, #a10131, #ffcd00); */
+    background: #b0b0b067;
+
+     border-radius: 15px; 
+  }
+
 @media only screen and (min-width:768px) {
 
 
