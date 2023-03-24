@@ -1,9 +1,9 @@
 ---
 import Popular_item from "../components/popular_item.astro";
-import popular_shop_1 from '../popular/popular_shop_1.png'
-import popular_shop_2 from '../popular/popular_shop_4.png'
-import popular_shop_3 from '../popular/popular_shop_2.png'
-import popular_shop_4 from '../popular/popular_shop_3.png'
+import popular_shop_1 from '/popular/popular_shop_1.png'
+import popular_shop_2 from '/popular/popular_shop_4.png'
+import popular_shop_3 from '/popular/popular_shop_2.png'
+import popular_shop_4 from '/popular/popular_shop_3.png'
 ---
 <div class="popular_shop">
     <Popular_item title_popular="Regalos (o Caprichos) con amor" sub_popular="Mil maneras de decir TE QUIERO" img_popular={popular_shop_1} ></Popular_item>
@@ -16,14 +16,12 @@ import popular_shop_4 from '../popular/popular_shop_3.png'
     .popular_shop{
         margin-top: 5px;
         gap: 10px;
-        /* background: #0000ff38; */
-        max-width: 368px;
+        /* max-width: 368px; */
         display: flex;
         margin-left: 22px;
         flex-wrap: nowrap;
-        /* max-height: 250px; */
         overflow-x: scroll;
-        width: auto;
+        width: -webkit-fill-available;
         -webkit-overflow-scrolling: touch;
         margin-bottom: 5px;
         scroll-snap-type: x mandatory;

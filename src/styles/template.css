@@ -1,11 +1,13 @@
 body{
-    border-top: 8px solid #9E9E9E;
+    /* border-top: 8px solid #9E9E9E; */
+    border-top: 8px solid #D2451E;
+    padding-top: 2px;
     display: flex;
     align-items: center;
     height: 100vh;
     /* padding: 15px; */
     margin: 0;
-    background-color: rgb(242,242,242);
+    background-color: rgb(255, 255, 255);
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     justify-content: flex-start;
@@ -22,7 +24,7 @@ div#circle {
     align-items: baseline;
     justify-content: space-between;
     font-size: 12px;
-    width: 100%;
+    width: 98%;
 }
 .cp{
     display: flex;
@@ -30,4 +32,19 @@ div#circle {
 }
 main{
     width: 100%;
+}
+
+@media only screen and (min-width:768px) {
+
+
+}
+@media only screen and (min-width:1024px) {
+  
+    main{
+        width: 40%;
+    }
+    .caption {
+        width: 40%;
+    }
+
 }

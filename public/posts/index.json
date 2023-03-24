@@ -1,0 +1,39 @@
+[{
+    "title": "Red velvet", 
+    "url":"/store_items/red_velvet.png",
+    "price":"31.99€",
+    "discount_price":"",
+    "before_price":"",
+    "tag":{
+      "collection":"ultimos_lanzamientos"
+    }
+
+ },
+ {
+    "title": "White ocean", 
+    "url":"/store_items/white_ocean.png",
+    "price":"32.99€",
+    "discount_price":"15% de descuento",
+    "before_price":"45.99€",
+    "tag":{
+      "collection":"ultimos_lanzamientos"
+    }
+ },{
+    "title": "Red emeralds", 
+    "url":"/store_items/red_emeralds.png",
+    "price":"12.99€",
+    "discount_price":"15% de descuento",
+    "before_price":"45.99€",
+    "tag":{
+      "collection":"ultimos_lanzamientos"
+    }
+ },{
+    "title": "Black emeralds", 
+    "url":"/store_items/black_emeralds.png",
+    "price":"36.99€",
+    "discount_price":"15% de descuento",
+    "before_price":"45.99€",
+    "tag":{
+      "collection":"ultimos_lanzamientos"
+    }
+ }]

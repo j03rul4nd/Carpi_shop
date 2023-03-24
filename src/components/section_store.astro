@@ -1,37 +1,48 @@
 ---
 import Item_shop from "../components/item_shop.astro";
-const {title_section, sub_section, img_shop_section, bgimage_1, bgimage_2, bgimage_3, bgimage_4, title_item_1, title_item_2, title_item_3, title_item_4, price_item_1, price_item_2, price_item_3, price_item_4, discount_price_1, discount_price_2, discount_price_3, discount_price_4, before_price_1, before_price_2, before_price_3, before_price_4} = Astro.props;
+const {background_1, background_2, Color, title_section, sub_section, img_shop_section, bgimage_1, bgimage_2, bgimage_3, bgimage_4, title_item_1, title_item_2, title_item_3, title_item_4, price_item_1, price_item_2, price_item_3, price_item_4, discount_price_1, discount_price_2, discount_price_3, discount_price_4, before_price_1, before_price_2, before_price_3, before_price_4} = Astro.props;
 
 ---
-<div class="section_store">
-    <div class="header_section_store">
-        <h3>{title_section}</h3>
-        <p>{sub_section}</p>
-        <img class="portada_img_section_shop" src={img_shop_section} alt="" srcset="">
-    </div>
-    <div class="contain_section_store">
-        <Item_shop img_shop_item={bgimage_1} title_item={title_item_1} price={price_item_1} discount={discount_price_1} before_price={before_price_1}></Item_shop>
-        <Item_shop img_shop_item={bgimage_2} title_item={title_item_2} price={price_item_2} discount={discount_price_2} before_price={before_price_2}></Item_shop>
-        <Item_shop img_shop_item={bgimage_3} title_item={title_item_3} price={price_item_3} discount={discount_price_3} before_price={before_price_3}></Item_shop>
-        <Item_shop img_shop_item={bgimage_4} title_item={title_item_4} price={price_item_4} discount={discount_price_4} before_price={before_price_4}></Item_shop>
-    </div>
-</div>
+
 <style>
+    .h3_section_store{
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+        letter-spacing: -.24px;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+    .section_store{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+    }
     .portada_img_section_shop{
         width: 100%;
     }
     .header_section_store{
         padding-top: 10px;
         padding-left: 22px;
-        background: #E0E0E0;
+        background: #a2a3a8;
+        display: flex;
+        /* margin: 0px; */
+        gap: 0px;
+        flex-direction: column;
+    }
+    .contain_the_section_color_store{
+        background: #e6e6e8;
+        width: -webkit-fill-available;
+
     }
     .contain_section_store{
-        background: #EFEFEF;
+        
+        /* background: #EFEFEF; */
         padding-left: 22px;
         margin-top: 15px;
         margin-top: 5px;
         gap: 50px;
-        max-width: 345px;
+        /* max-width: 276px; */
         display: flex;
         margin-left: 22px;
         flex-wrap: nowrap;
@@ -41,4 +52,69 @@ const {title_section, sub_section, img_shop_section, bgimage_1, bgimage_2, bgima
         margin-bottom: 5px;
         scroll-snap-type: x mandatory;
     }
+    .sub_section_shop_header{
+        font-size: 1.5rem;
+        letter-spacing: -.24px;
+        line-height: 2rem;
+        font-weight: 400;
+        font-family: Tiempos,Times New Roman,serif;
+        margin: 0px;
+        margin-bottom: 6px;
+    }
+    .part_link_ref{
+        padding-bottom: 1.5rem;
+    }
+    .link_ref_span{
+        display: flex;
+        padding-top: 1.5rem;
+        gap: 5px;
+        align-items: center;
+    }
+
+
+    @media only screen and (min-width:768px) {
+    .header_section_store {
+        padding-top: 10px;
+        padding-left: 22px;
+ 
+        display: flex;
+        gap: 63px;
+
+        padding-top: 1.5rem;
+
+        border: 0;
+        padding-left: 24px;
+
+        justify-content: space-between;
+        flex-direction: initial;
+    }
+    .portada_img_section_shop{
+        width: 50%;
+    }
+
+}
+
 </style>
+<div class="section_store">
+    <div class="header_section_store" style={background_1}>
+        <div class="txt_header_section_store_contain">
+            <h3 style={Color} class="h3_section_store">{title_section}</h3>
+            <p class="sub_section_shop_header" style={Color}>{sub_section}</p>
+            <div class="part_link_ref">
+                <span class="link_ref_span">
+                    <span style={Color}  class="txt_ref_link">Descubre más</span>
+                    <svg style={Color}  viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="NP" focusable="false" aria-hidden="true"><path d="M.443 12c0 .414.336.75.75.75h20.869l-7.72 7.72a.75.75 0 0 0 1.06 1.06l7.94-7.94a2.252 2.252 0 0 0 0-3.18l-7.94-7.94a.75.75 0 0 0-1.06 1.06l7.72 7.72H1.192a.75.75 0 0 0-.75.75z"></path></svg>
+                </span>
+            </div>
+        </div>
+        <img class="portada_img_section_shop"  src={img_shop_section} alt="" srcset="">
+    </div>
+    <div class="contain_the_section_color_store" style={background_2}>
+        <div style={Color} class="contain_section_store">
+            <Item_shop img_shop_item={bgimage_1} title_item={title_item_1} price={price_item_1} discount={discount_price_1} before_price={before_price_1}></Item_shop>
+            <Item_shop img_shop_item={bgimage_2} title_item={title_item_2} price={price_item_2} discount={discount_price_2} before_price={before_price_2}></Item_shop>
+            <Item_shop img_shop_item={bgimage_3} title_item={title_item_3} price={price_item_3} discount={discount_price_3} before_price={before_price_3}></Item_shop>
+            <Item_shop img_shop_item={bgimage_4} title_item={title_item_4} price={price_item_4} discount={discount_price_4} before_price={before_price_4}></Item_shop>
+        </div>
+    </div>
+</div>

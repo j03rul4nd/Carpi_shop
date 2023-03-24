@@ -1,17 +1,20 @@
 ---
-const {title_item, price, before_price, discount, img_shop_item} = Astro.props;
+const { title_item, price, before_price, discount, img_shop_item} = Astro.props;
+
+
 
 ---
 <div class="item_shop">
     <div class="portada_item_shop">
         <img class="img_item_shop" src={img_shop_item} alt="">
-        <div class="descount_item_shop">{discount}</div>
+        <div class={discount == null ? '' : 'descount_item_shop'}>{discount}</div>
+
     </div>
     <div class="description_item_shop">
         <h4 class="title_item_shop">{title_item}</h4>
         <div class="price_content">
-            <p class="price_item_shop">{price}</p>
-            <p class="discount_price_item_shop">{before_price}</p>
+            <p   class="price_item_shop">{price}</p>
+            <p  class="discount_price_item_shop">{before_price}</p>
         </div>
     </div>
 </div>
