@@ -1,4 +1,4 @@
-# Tienda de Pulseras Artesanales
+# Tienda de Pulseras Artesanales: Carpi
 ![](./docs/portada_readme.png)
 
 Este repositorio contiene el código fuente de una página web para una tienda de pulseras artesanales, utilizando la herramienta Astro para su desarrollo. La página está diseñada para mostrar los productos de manera atractiva y permitir a los clientes realizar compras en línea de manera sencilla y segura.
