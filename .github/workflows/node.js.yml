@@ -25,6 +25,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm i
-    # - run: pm2 reload 0
-    # - run: npm run dev 
-    #--if-present
+    #- run: pm2 reload 0
+    - run: npm run dev --if-present
+    #
