@@ -7,14 +7,14 @@ import Ultimate_shop from "../components/Ultimate_section.astro";
 import Carpi_Primavera from "../components/Carpi_primavera.astro";
 import Footer from "../components/Footer.astro";
 
-import bgimage from './portada.png'
+import bgimage from '/portada.png'
 ---
 
 <Layout title="Home">
 	<main class="mx-auto container">
 
 	<!-- header -->
-	<Header bgimage={bgimage}></Header>
+	 <Header bgimage={bgimage}></Header> <!---->
 	<!-- Popular shop -->
 	<Popular_shop></Popular_shop>
 	<!-- New collection -->
@@ -25,4 +25,4 @@ import bgimage from './portada.png'
 	</main>
 	<!-- Footter -->
 	<Footer></Footer>
-</Layout
+</Layout>
